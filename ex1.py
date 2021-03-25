@@ -51,8 +51,14 @@ plt.title("survived_pclass_data")
 plt.pie(survived_pclass_data, labels=survived_pclass_data.index, autopct='%.1f%%')
 plt.savefig("plot/survived_pclass_data.png")
 
-#
+#평균 구하기.
 data['Age'].mean()
+
+#빈 데이터 드랍
+data['Age'].dropna()
+
+#자체의 값으로 곱셈/나눗셈 연산 가능.
+data['Age']*3
 
 data[data['Sex'] == 'female'][data['Survived'] == True]['Age'].mean()
 data[data['Sex'] == 'male']['Age'].mean()
