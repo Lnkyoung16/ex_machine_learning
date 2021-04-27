@@ -2,7 +2,7 @@
 from pandas import read_csv
 from numpy import set_printoptions
 from sklearn.preprocessing import MinMaxScaler
-filename = 'pima-indians-diabetes.data.csv'
+filename = '1_machine_learning_mastery_with_python/code/chapter_07/pima-indians-diabetes.data.csv'
 names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
 dataframe = read_csv(filename, names=names)
 array = dataframe.values

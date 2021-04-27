@@ -9,7 +9,7 @@ array = dataframe.values
 # separate array into input and output components
 X = array[:,0:8]
 Y = array[:,8]
-binarizer = Binarizer(threshold=0.0).fit(X)
+binarizer = Binarizer(threshold=0.5).fit(X)
 binaryX = binarizer.transform(X)
 # summarize transformed data
 set_printoptions(precision=3)
